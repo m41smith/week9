@@ -16,6 +16,7 @@ def examine_income_data(exel_file_name):
         change_in_income = median_income2018 - median_income2016_income
         if change_in_income < 0:
             print(f"{state_name}\t: {change_in_income}")
+
 def main():
     examine_income_data("CensuseMedianIncome.xlsx")
 
